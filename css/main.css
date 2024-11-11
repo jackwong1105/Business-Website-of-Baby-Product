@@ -1,0 +1,418 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #f2f6e9;
+}
+.livetime{
+  font-size: 20px;
+}
+
+
+
+
+
+/*--- navigation bar ---*/
+
+.navbar {
+  background:rgb(44, 164, 194);
+
+}
+
+.nav-link,
+.navbar-brand {
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav-link {
+  margin-right: 1em !important;
+}
+
+.nav-link:hover {
+  color: #000;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Noto Sans TC', sans-serif;
+}
+p, a, span, li label {
+	font-family: 'Noto Sans TC', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+  display: inline-block;
+}
+li a {font-family:"Trebuchet MS",Helvetica, sans-serif;font-size: 1.3em;text-align: center;;} 
+li a:hover {color: green;}
+
+#intro .jumbotron-fluid {
+	// background-image: url('../images/jumbo.jpg');
+	background-size: cover;
+	background-position: 50%;
+	height: 30vh;
+	margin-bottom: 0px;
+}
+#comp-logo {
+	border-radius: 50%;
+	width: 30px;
+}
+#intro .jumbotron-fluid .container-fluid {
+	position:relative;
+	top:50%;
+	transform: translate(0, -50%);
+	color:#7a2da7;
+  text-align: center;
+}
+
+#second {
+	padding:80px 0px;
+}
+#second h3, #latest h3{
+	margin-bottom: 70px;
+	font-size: 32px;
+}
+#second img {
+	border-radius: 50%;
+	width:120px;
+}
+
+p.msg1, p.msg2 {
+	font-size:16px;
+	line-height:26px;
+	font-weight:bold;
+	color:navy;
+}
+
+h3.lead1 {
+	color:rgb(23, 28, 95);
+	font-weight:bold;
+}
+
+h5.lead2 {
+	color:navy;
+	font-weight:bold;
+}
+
+p.lead3 {
+	color: navy;
+	font-weight:bold;
+	line-height: 31px;
+}
+
+.header {
+  background-image: url('../images/header-backgorund.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.header2 {
+  background-image: url('../images/Babyfood.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.header3 {
+  background-image: url('../images/Babycare.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.header4 {
+  background-image: url('../images/Babytoy.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.header5 {
+  background-image: url('../images/Games.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.description {
+  left: 50%;
+  position: absolute;
+  top: 45%;
+  transform: translate(-50%, -55%);
+  text-align: center;
+}
+
+.description h1 {
+  color: #6ab446;
+}
+
+.description p {
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.description button {
+  border:1px solid #6ab446;
+  background:#6ab446;
+  border-radius: 0;
+  color:#fff;
+}
+.description button:hover {
+  border:1px solid #fff;
+  background:#fff;
+  color:#000;
+}
+
+.features {
+  margin: 4em auto;
+  padding: 1em;
+  position: relative;
+}
+
+.feature-title {
+  color: #333;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.features img {
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  margin-bottom: 16px;
+}
+
+.features .form-control,
+.features input {
+    border-radius: 0;
+}
+
+.features .btn {
+  background-color: #589b37;
+  border: 1px solid #589b37;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.features .btn:hover {
+  background-color: #333;
+  border: 1px solid #333;
+}
+
+.page-footer {
+  background-color: #222;
+  color: #ccc;
+  padding: 60px 0 30px;
+}
+
+.footer-copyright {
+  color: #666;
+  padding: 40px 0;
+}
+
+.prod-cat li a{
+  border-bottom: 1px dashed #d9d9d9;
+}
+
+.prod-cat li a {
+  color: #3b3b3b;
+}
+
+.prod-cat li ul {
+  margin-left: 30px;
+}
+
+.prod-cat li ul li a{
+  border-bottom:none;
+}
+.prod-cat li ul li a:hover,.prod-cat li ul li a:focus, .prod-cat li ul li.active a , .prod-cat li a:hover,.prod-cat li a:focus, .prod-cat li a.active{
+  background: none;
+  color: #ff7261;
+}
+
+.pro-lab{
+  margin-right: 20px;
+  font-weight: normal;
+}
+
+.pro-sort {
+  padding-right: 20px;
+  float: left;
+}
+
+.pro-page-list {
+  margin: 5px 0 0 0;
+}
+
+.product-list img{
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+  -webkit-border-radius: 4px 4px 0 0;
+}
+
+.product-list .pro-img-box {
+  position: relative;
+}
+.adtocart {
+  background: #fc5959;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  border: 3px solid #fff;
+  left: 45%;
+  bottom: -25px;
+  position: absolute;
+}
+
+.adtocart i{
+  color: #fff;
+  font-size: 25px;
+  line-height: 42px;
+}
+
+.pro-title {
+  color: #5A5A5A;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.product-list .price {
+  color:#fc5959 ;
+  font-size: 15px;
+}
+
+.pro-img-details {
+  margin-left: -15px;
+}
+
+.pro-img-details img {
+  width: 100%;
+}
+
+.pro-d-title {
+  font-size: 16px;
+  margin-top: 0;
+}
+
+.product_meta {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+  margin: 15px 0;
+}
+
+.product_meta span {
+  display: block;
+  margin-bottom: 10px;
+}
+.product_meta a, .pro-price{
+  color:#fc5959 ;
+}
+
+.pro-price, .amount-old {
+  font-size: 18px;
+  padding: 0 10px;
+}
+
+.amount-old {
+  text-decoration: line-through;
+}
+
+.quantity {
+  width: 120px;
+}
+
+.pro-img-list {
+  margin: 10px 0 0 -15px;
+  width: 100%;
+  display: inline-block;
+}
+
+.pro-img-list a {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.pro-d-head {
+  font-size: 18px;
+  font-weight: 300;
+}
+* {box-sizing: border-box}
+.mySlides1 {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+
+@media (max-width: 575.98px) {
+
+  .description {
+    left: 0;
+    padding: 0 15px;
+    position: absolute;
+    top: 10%;
+    transform: none;
+    text-align: center;
+  }
+  
+  .description h1 {
+    font-size: 2em;
+  }
+  
+  .description p {
+    font-size: 1.2rem;
+  }
+  
+  .features {
+    margin: 0;
+  }
+
+}

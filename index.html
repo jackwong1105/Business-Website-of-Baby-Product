@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Reliable Baby Product Specialist (RBPS) Company Limited</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- bootstrap css -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <!-- jQuery libary -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <!-- bootstrap jQueary libary -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <!-- Googld Front for header -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+        <!-- Googld Font for elements in body -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Open+Sans&display=swap" rel="stylesheet">
+        <!-- custom css rules -->
+        <link rel="stylesheet" type=text/css href="css/main.css">
+        <!--- cusotm javascript for straching a picture to the height of screen -->
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+
+    <body onload="startTime()">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="index.html"><img id="comp-logo" src="images/logo.jpg" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="txt" class="livetime"></div>
+            <script>
+              function startTime() {
+                const today = new Date();
+                let h = today.getHours();
+                let m = today.getMinutes();
+                let s = today.getSeconds();
+                m = checkTime(m);
+                s = checkTime(s);
+                document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+                setTimeout(startTime, 1000);
+              }
+
+              function checkTime(i) {
+                if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+                return i;
+              }
+            </script>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Product Catalog
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="BabyFood.html" target="_blank">Baby Food</a>
+                    <a class="dropdown-item" href="BabyCare.html">Baby Care</a>
+                    <a class="dropdown-item" href="BabyToys.html">Baby Toys</a>
+                  </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="Games1.html">Games</a>
+                  </li>
+  
+              
+
+              </ul>
+            </div>
+        </nav>	
+        <header class="page-header header container-fluid">
+            <div class="overlay">
+            </div>
+            <section id="intro">
+                <div class="jumbotron-fluid">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1 class="display-4">Baby is the best!</h1>
+                                <p class="lead">We provide the best product to your Baby!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="second">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2 text-center">
+                        <h3 class="lead1">Hello! Welcome to Reliable Baby Product Specialist (RBPS) Company Limited! </h3>
+                        <div class="row">
+                            <div class="col-md-4 text-center">
+                                <img src="images/Fonder.jpg" alt="contact">
+                                <h5 class="lead2">Our Founder</h5>
+                                <a class="btn btn-primary btn-lg" href="ASS1/index.html" target="_blank">Know More about ME!</a>       
+                            </div>
+                            <div class="col-md-8 text-left">
+                                <p class="lead3">
+                                    Hi, I'm Jack Wong, the Founder who set up Reliable Baby Product Specialist (RBPS) Company Limited,
+                                </p>
+                                <p class="msg1">
+                                    We provide different high-tech baby products to your 
+                                    baby!
+                                </p>
+                                <p class="msg2">
+                                    If you want your baby has a full protection, please don't hesitate to buy our product! 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+            </header>
+          <div class="container features">
+              <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                  <h3 class="feature-title">Advantages of High-Tech Baby Product </h3>
+                  <img src="images/hightechbaby.jpg" class="img-fluid">
+                  <p> There are various advantages of high-tech baby product, like allowing children to expand their creativity, detecting the air quality, recording the baby health... Click <a href="https://www.bbc.com/worklife/article/20181128-the-smart-baby-technology-raising-todays-children" target="_blank">here</a> to know more about it!  </p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                  <h3 class="feature-title">Story about Reliable Baby Product Specialist</h3>
+                  <img src="images/pandem.jpg" class="img-fluid">
+                  <p> During the pandemic, I realized that babies' health is very important, but they don't have enough protection in front of different risks,
+                      so i start to making High-Tech Baby Product and sell it to help different families with their babies!   </p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12"> 
+                    <h3 class="feature-title">Get in Touch!</h3>
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Name" name="">
+                    </div>
+                    <div class="form-group">
+                      <input type="email" class="form-control" placeholder="Email Address" name="email">
+                    </div>
+                    <div class="form-group">
+                      <textarea class="form-control" rows="4"></textarea>
+                    </div>
+                    <input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
+                </div>
+              </div>
+          </div>
+          <h2 style="text-align: center;">Customer reviews:</h2>
+            <div class="slideshow-container">
+              <div class="mySlides1">
+                <img src="images/smile1.jpg" style="width:100%">
+                  <p><h6>This is a great product. 
+                  I actually use it for my mouth guard so it sits on my bathroom counter Simple operation. 
+                  I looked at a few products before buying this one, but it made me feel better that this is from a reputable company 
+                  (we used Munchkin products for our daughter when she was little and loved them). With COVID,
+                   I've been reading a lot about UV technology in general, and will be looking at larger products as well, 
+                   but this one was cost effective and perfect for what I needed. My mouth guard seems like it smells cleaner too, 
+                   but I admit that's probably subjective!</h6>
+                   <br>
+                   <i>By RADelaide, from California, USA</i>
+                   <br>
+                  <b>Product Name: 59S Mini Portable UV-C Sterilizer</b>
+                </p>
+              </div>
+
+              <div class="mySlides1">
+                <img src="images/smile2.jpg" style="width:100%">
+                <p><h6>Love this seat! I couldn’t wait for it to arrive and love that I can control it from my phone!</h6>
+                   <br>
+                   <i>By Jessica, from PAW PAW, MI, USA</i>
+                   <br>
+                  <b>Product Name: 4moms 2015 mamaRoo Baby Swing, Multi Plush</b>
+                </p>
+              </div>
+
+              <div class="mySlides1">
+                <img src="images/smile3.jpg" style="width:100%">
+                <p><h6>We recently had our second child and we wanted to get another Nanit for her. 
+                  The new Nanit Pro is better than the original Nanit we got for our son. 
+                  The old one had a not internet issues and a lot of times it would disconnect for no reason. 
+                  Also, when we traveled somewhere it would take a while to connect to the internet. 
+                  The new Nanit Pro is significantly better than the original. We haven't seen any of those difficulties so we are very happy. 
+                  The new Nanit Pro also comes with a year of the Nanit Insights which is even better! 
+                  The picture quality is really good and the two way speaker works great. There is a 1-2 second delay but that is not a big deal.
+
+                </h6>
+                  <br>
+                  <i>By Amit Patel, from Waltham, MA, USA</i>
+                  <br>
+                 <b>Product Name: NANIT PRO COMPLETE BABY MONITORING SYSTEM (WALL MOUNT VERSION)</b>
+               </p>
+              </div>
+              <div class="mySlides1">
+                <img src="images/smile4.jpg" style="width:100%">
+                  <p><h6>Overall I’m really impressed with this piano. 
+                    It sounds good and it’s been dropped a few times and is holding up well. 
+                    My only complaint is the color of the music dots on the cards that come with it. 
+                    The orange and red dots look a lot a like in color. My brother (the actual piano player in the family) 
+                    pointed out which ones are actually supposed to be red. I colored those in with a red permanent marker 
+                    to make them red and not orange. My three year old loves trying to match the dots to make the song and 
+                    my two year old just plays freely. It’s a great first piano.</h6>
+                   <br>
+                   <i>By Jeanne, from New York, USA</i>
+                   <br>
+                  <b>Product Name: Baby Einstein and Hape Magic Touch Piano Wooden Musical Toddler Toy, Age 6 Months and Up</b>
+                </p>
+              </div>
+              <div class="mySlides1">
+                <img src="images/smile5.jpg" style="width:100%">
+                <p><h6>
+                  I'm a mother of 4 and grandmother of 5, who has ALWAYS made everything that goes into my babies' mouths myself 
+                  from scratch. However, one of my daughters requested ready prepared food for a trip for her not quite six month old. 
+                  I did my homework choosing this exact mix of Gerber Organic Purees. Good food value, excellent choice of fruit and vegetables, 
+                  and really good taste. My daughter chose to wait a bit longer before introducing the variety with strawberry included in it 
+                  because strawberry can cause allergic reaction when given too early. However, the baby ate the other two varieties with much delight 
+                  and no problems: no allergic reaction, no constipation and no stomach upset. We give a very positive rating to this product.
+
+                </h6>
+                  <br>
+                  <i>By Eleni, from State of Maine, USA</i>
+                  <br>
+                 <b>Product Name: GERBER Organic pear blueberry apple avocado fruit puree
+                  </b>
+               </p>
+              </div>
+
+
+              <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            </div>
+            <script>
+              var slideIndex = [1,1];
+              var slideId = ["mySlides1", "mySlides2"]
+              showSlides(1, 0);
+              showSlides(1, 1);
+              
+              function plusSlides(n, no) {
+                showSlides(slideIndex[no] += n, no);
+              }
+              
+              function showSlides(n, no) {
+                var i;
+                var x = document.getElementsByClassName(slideId[no]);
+                if (n > x.length) {slideIndex[no] = 1}    
+                if (n < 1) {slideIndex[no] = x.length}
+                for (i = 0; i < x.length; i++) {
+                   x[i].style.display = "none";  
+                }
+                x[slideIndex[no]-1].style.display = "block";  
+              }
+              </script>
+            
+              <marquee><a href="BabyFood.html" target="blank"><img src="images/food1.jpg"width="100" height="100"></a>
+                <a href="BabyCare.html" target="blank"><img src="images/product2.jpg"width="100" height="100"></a>
+                <a href="BabyToys.html" target="blank"><img src="images/toys3.jpg"width="100" height="100"></a>
+
+                <a href="BabyFood.html" target="blank"><img src="images/food4.jpg"width="100" height="100"></a>
+                <a href="BabyFood.html" target="blank"><img src="images/food2.jpg"width="100" height="100"></a>
+                <a href="BabyToys.html" target="blank"><img src="images/toys6.jpg"width="100" height="100"></a>
+
+                <a href="BabyCare.html" target="blank"><img src="images/product5.jpg"width="100" height="100"></a>
+                <a href="BabyCare.html" target="blank"><img src="images/product3.jpg"width="100" height="100"></a>
+                <a href="BabyCare.html" target="blank"><img src="images/product4.jpg"width="100" height="100"></a>
+                <a href="BabyToys.html" target="blank"><img src="images/toys2.jpg"width="100" height="100"></a>
+
+                <a href="BabyFood.html" target="blank"><img src="images/food5.jpg"width="100" height="100"></a>
+                <a href="BabyToys.html" target="blank"><img src="images/toys1.jpg"width="100" height="100" ></a>
+
+                <a href="BabyFood.html" target="blank"><img src="images/food3.jpg"width="100" height="100"></a>
+                <a href="BabyCare.html" target="blank"><img src="images/product1.jpg"width="100" height="100"></a>
+                <a href="BabyToys.html" target="blank"><img src="images/toys5.jpg"width="100" height="100"></a>
+              </marquee> 
+            <footer class="page-footer">
+              <div class="container">
+                <div class="row">
+                 <div class="col-lg-8 col-md-8 col-sm-12">
+                  <h6 class="text-uppercase font-weight-bold">Additional Information</h6>
+                  <p> We have a great customer team who willing to answer your question 24 hours. 
+                      If you have any questions about our product, 
+                      please click  
+                        <a href = "mailto: CustomerServiceRBPS@gmail.com" style="text-align: center;">
+                            this
+                        </a>to send email to us!
+                </p>
+                <p> We cooperate with different logistics companies, such as Fedex, DHL, SF Express, and provide perfect delivery service to make sure your product will not damage or lost!  </p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                  <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                  <p>12/F, 28 Wang Hoi Road, Kowloon Bay, HK SAR
+                  <br/>info@fruit-utopria.com
+                  <br/>+ 01 234 567 88
+                  <br/>+ 01 234 567 89</p>
+                </div>
+              </div>
+              <div class="footer-copyright text-center">© 2021 Copyright: Reliable Baby Product Specialist (RBPS) Company Limited</div>
+            </footer>
+        
+    </body>
+
+</html>
